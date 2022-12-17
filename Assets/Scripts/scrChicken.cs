@@ -16,7 +16,7 @@ public class scrChicken : MonoBehaviour
     public GameObject strip8;
     public GameObject strip9;
 
-    // Street is index 0    Rocks is index 1,2     Tree is index 3,4    Plain is index 5,6
+    // Street is index 0    Rocks is index 1,2     Tree is index 3,4    Plain is index 5,69
 
     bool isJumping = false;
     public GameObject[] poolOfStripsPrefabs;
@@ -45,9 +45,6 @@ public class scrChicken : MonoBehaviour
     public float movingSpeed = 50.0f;
     public float jumpHeightIncrement = 5.0f;
     private float midwayPointZ;
-
-
-    static bool isAGrassStripToBeDisplayed = false; // otherwise the street strip is to be displayed
 
     // Start is called before the first frame update
     void Start()
@@ -148,7 +145,7 @@ public class scrChicken : MonoBehaviour
             }
             
             indexOfPreviousGrassStrip = randomNumber;
-            numOfGrassStripsToDisplayToDisplay -= 1;
+            numOfGrassStripsToDisplay -= 1;
 
             if (numOfGrassStripsToDisplay == 0)
             {
